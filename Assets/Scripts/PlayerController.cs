@@ -14,12 +14,19 @@ public class PlayerController : MonoBehaviour
 
     private void GameInout_OnInteract2Action(object sender, int pID)
     {
-        weapon.Activate2(gameObject);
+        if (pID == playerID)
+        {
+            weapon.Activate2(gameObject);
+        }
     }
 
     private void GameInput_OnInteract1Action(object sender, int pID)
     {
-        weapon.Activate1(gameObject);
+        if (pID == playerID)
+        {
+            weapon.Activate1(gameObject);
+        }
+       
     }
 
     void Update()
