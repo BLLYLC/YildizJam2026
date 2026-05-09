@@ -515,6 +515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 73954698}
   player2: {fileID: 1633644076}
+  weaponList: []
 --- !u!4 &479664587
 Transform:
   m_ObjectHideFlags: 0

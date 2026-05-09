@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f265495038cfaf84ea12c8c3a37ac364, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  WeaponName: 
-  attackSpeed: 
+  WeaponName: Shield
+  attackSpeed: .5
   GameObject: {fileID: 0}
