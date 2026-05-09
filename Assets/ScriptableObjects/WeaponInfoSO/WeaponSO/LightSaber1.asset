@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a6ae25d5188164ab51abfe5ece76c3, type: 3}
-  m_Name: LightSaber
+  m_Script: {fileID: 11500000, guid: 68317d1fb84aee44da0dcfc757f672e9, type: 3}
+  m_Name: LightSaber1
   m_EditorClassIdentifier: 
-  WeaponName: Light Saber
+  WeaponName: LightSaber1
   attackSpeed: 3
-  GameObject: {fileID: 7427735201018573997, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-  hitPos: {fileID: 0}
+  GameObject: {fileID: 919132149155446097, guid: d2e30d115bb30da499a5011e1f1fc661, type: 3}
+  hitPos1: {fileID: 0}
   damage: 10
