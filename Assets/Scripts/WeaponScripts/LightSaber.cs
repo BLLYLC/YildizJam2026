@@ -7,7 +7,7 @@ public class LightSaber : WeaponBase
 {
     [SerializeField] Transform hitPos;
     [SerializeField] float damage;
-    public override void Activate1(GameObject owner)
+    public override void Activate2(GameObject owner)
     {
         //Normal attack
         //2 = animasyon + saldýrý
@@ -23,7 +23,7 @@ public class LightSaber : WeaponBase
         }
     }
 
-    public override void Activate2(GameObject owner)
+    public override void Activate1(GameObject owner)
     {
         var hit = Physics.OverlapSphere(hitPos.position, 1);
         bool didHit = false;
