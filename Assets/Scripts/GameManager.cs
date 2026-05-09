@@ -3,17 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }
+
     public static string p1WeaponName;
     public static string p2WeaponName;
-    public static GameManager Instance { get; private set; }
+
+    public int p1Wins = 0;
+    public int p2Wins = 0;
+    public int currentRound = 1;
+    public const int maxRounds = 2;
 
     private void Awake()
     {
+        if (Instance != null) { Destroy(gameObject); }
         Instance = this;
-    }
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
+        DontDestroyOnLoad(gameObject);
     }
     public void SetWeapon(int pID,string weaponName)
     {
@@ -36,5 +40,27 @@ public class GameManager : MonoBehaviour
             return p2WeaponName;
         }
         return null;
+    }
+
+    public void RoundOver(int loserID)
+    {
+        if (loserID == 0) p2Wins++;
+        else p2Wins++;
+
+        if (currentRound >= maxRounds)
+        {
+            SceneManager.LoadScene(2);
+        }
+
+        else
+        {
+            currentRound++;
+            SceneManager.LoadScene(1);
+        }
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }
