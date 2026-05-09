@@ -15,15 +15,15 @@ public class BlasterBullet : MonoBehaviour
         transform.position += transform.forward*speed*Time.deltaTime;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.TryGetComponent<PlayerStats>(out PlayerStats p))
+    private void OnTriggerEnter(Collider other)
+    {   print("COLLISANLANDIM2");
+        if (other.gameObject.TryGetComponent<PlayerStats>(out PlayerStats p))
         {
             p.TakeDamage(damage);
         }
-        print("COLLISANLANDIM1");
+
         DestroySelf();
-        print("COLLISANLANDIM2");
+       
     }
     private void DestroySelf()
     {

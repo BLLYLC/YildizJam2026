@@ -5,7 +5,7 @@ public class Blaster : WeaponBase
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private float distance=1;
-    [SerializeField] private float Knockback=5f;
+    [SerializeField] private float Knockback=1f;
     public override void Activate1(GameObject owner)
     {
        Instantiate(bullet,owner.transform.position + owner.transform.forward*distance,owner.transform.rotation);
