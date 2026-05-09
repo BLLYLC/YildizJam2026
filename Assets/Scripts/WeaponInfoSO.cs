@@ -4,8 +4,9 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName ="WeaponInfoSO",menuName = "ScriptableObjects/WeaponInfoSO")]
 public class WeaponInfoSO : ScriptableObject
 {
-    public string WeaponName;
-    public string FirstHalf;
-    public string SecondHalf;
-    public Sprite WeaponSprite;
+    public string weaponName;
+    public string firstHalf;
+    public string secondHalf;
+    public GameObject gameObject;
+    public Sprite weaponSprite;
 }
