@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeaponName: 
   attackSpeed: 
-  model: {fileID: 0}
+  model: {fileID: 2574181801752765463}
   hitPos: {fileID: 337045209171739108}
   damage: 10
 --- !u!1 &3230847845575051501

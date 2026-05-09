@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - GameObject: {fileID: 919132149155446097, guid: 5f52bf52db62cdb47aa7b2e6ee7b7ff6, type: 3}
+  - model: {fileID: 2574181801752765463, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
   - hitPos: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
