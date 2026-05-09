@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 73954699}
   - component: {fileID: 73954701}
   - component: {fileID: 73954702}
+  - component: {fileID: 73954703}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -270,7 +271,7 @@ Transform:
   m_GameObject: {fileID: 73954698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: -0.01, z: 0}
+  m_LocalPosition: {x: 1.75, y: -0.5289477, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -312,6 +313,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2627511, y: 1.3022556, z: 1.296812}
   m_Center: {x: 0, y: 0.6800753, z: 0.021895885}
+--- !u!54 &73954703
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73954698}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &201445190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -705,7 +733,7 @@ MonoBehaviour:
   weaponList:
   - {fileID: 11400000, guid: f6bf7047661c23844944ecf556afa309, type: 2}
   - {fileID: 11400000, guid: a18f82727178f8246925fb86502a5d2c, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 7cc91bd2a40747a4a9c2fd512507e739, type: 2}
 --- !u!4 &479664587
 Transform:
   m_ObjectHideFlags: 0
@@ -1701,6 +1729,7 @@ GameObject:
   - component: {fileID: 1633644077}
   - component: {fileID: 1633644079}
   - component: {fileID: 1633644080}
+  - component: {fileID: 1633644081}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -1732,7 +1761,7 @@ Transform:
   m_GameObject: {fileID: 1633644076}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.8}
+  m_LocalPosition: {x: 0, y: -0.2952969, z: 1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1774,6 +1803,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2480493, y: 1.3897917, z: 1.372074}
   m_Center: {x: -0.0059060156, y: 0.49019253, z: -0.008858621}
+--- !u!54 &1633644081
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633644076}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &2144377766 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f52bf52db62cdb47aa7b2e6ee7b7ff6, type: 3}
