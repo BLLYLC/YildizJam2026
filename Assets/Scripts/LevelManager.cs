@@ -8,7 +8,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject player2;
     private string p1WeaponName;
     private string p2WeaponName;
-    [SerializeField] private List<WeaponBase> weaponList;
+    [SerializeField] private List<GameObject> weaponPrefabList;
+    private WeaponBase p1Weapon;
+    private WeaponBase p2Weapon;
     private void Start()
     {   
         PlayerController pc1 = player1.GetComponent<PlayerController>();
@@ -16,16 +18,23 @@ public class LevelManager : MonoBehaviour
 
         p1WeaponName =GameManager.Instance.GetWeaponName(0);
         p2WeaponName = GameManager.Instance.GetWeaponName(1);
-        foreach (WeaponBase weapon in weaponList)
+        foreach (GameObject weapon in weaponPrefabList)
         {
-            if (weapon.name == p1WeaponName)
+            if (p1Weapon != null && p2Weapon != null) break;
+
+            if(weapon.GetComponent<WeaponBase>().name == p1WeaponName)
             {
-                pc1.SetWeapon(weapon);
+                var t = Instantiate(weapon);
+                p1Weapon = t.GetComponent<WeaponBase>();
             }
-            if (weapon.name == p2WeaponName)
+            else if(weapon.GetComponent<WeaponBase>().name == p2WeaponName)
             {
-                pc2.SetWeapon(weapon);
+                var t = Instantiate(weapon);
+                p2Weapon = t.GetComponent<WeaponBase>();
             }
+            
         }
+        pc1.SetWeapon(p1Weapon);
+        pc2.SetWeapon(p2Weapon);
     }
 }

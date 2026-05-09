@@ -1,7 +1,5 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Shield", menuName = "ScriptableObjects/WeaponBase/Shield")]
-
 public class Shield : WeaponBase
 {
 

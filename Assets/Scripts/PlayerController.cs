@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed=10f;
     [SerializeField] private int playerID;
     [SerializeField] private WeaponBase weapon;
+    [SerializeField] private Transform playerHand;
 
     private void Start()
     {
@@ -45,5 +46,8 @@ public class PlayerController : MonoBehaviour
     public void SetWeapon(WeaponBase newWeapon)
     {
         weapon = newWeapon;
+        newWeapon.transform.parent = playerHand;
+        newWeapon.transform.localPosition = Vector3.zero;
+        newWeapon.transform.localRotation = Quaternion.identity;
     }
 }

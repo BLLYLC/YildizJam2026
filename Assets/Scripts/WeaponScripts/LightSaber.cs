@@ -1,8 +1,6 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LightSaber", menuName = "ScriptableObjects/WeaponBase/LightSaber")]
-
 public class LightSaber : WeaponBase
 {
     [SerializeField] Transform hitPos;

@@ -1,5 +1,4 @@
 using UnityEngine;
-[CreateAssetMenu(fileName = "Blaster", menuName = "ScriptableObjects/WeaponBase/Blaster")]
 
 public class Blaster : WeaponBase
 {
