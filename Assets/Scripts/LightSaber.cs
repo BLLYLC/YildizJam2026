@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class LightSaber : WeaponBase
@@ -22,6 +23,20 @@ public class LightSaber : WeaponBase
 
     public override void Activate2(GameObject owner)
     {
-        //None
+        var hit = Physics.OverlapSphere(hitPos.position, 1);
+        bool didHit = false;
+        foreach (Collider h in hit)
+        {
+            if (h.TryGetComponent<PlayerStats>(out PlayerStats p))
+            {
+                p.TakeDamage(damage);
+                didHit = true;
+            }
+        }
+
+        if ( (!didHit) && (owner.TryGetComponent<PlayerStats>(out PlayerStats self)))
+        {
+            self.TakeDamage(damage);
+        }
     }
 }
