@@ -7,6 +7,5 @@ public class WeaponInfoSO : ScriptableObject
     public string WeaponName;
     public string FirstHalf;
     public string SecondHalf;
-    public GameObject GameObject;
     public Sprite WeaponSprite;
 }
