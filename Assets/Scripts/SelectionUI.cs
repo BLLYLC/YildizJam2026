@@ -13,6 +13,7 @@ public class SelectionUI : MonoBehaviour
     [SerializeField] private Button rightButton;
     [SerializeField] private Button leftButton;
     [SerializeField] private Image weaponSprite;
+    [SerializeField] private int playerID;
     private int currentIndex = 0;
 
     private void Awake()
@@ -26,8 +27,40 @@ public class SelectionUI : MonoBehaviour
     }
     private void Start()
     {
+        GameInput.Instance.OnRightArrowAction += GameInput_OnRightArrowAction;
+        GameInput.Instance.OnLeftArrowAction += GameInput_OnLeftArrowAction;
+        GameInput.Instance.OnInteract1Action += GameInput_OnInteract1Action;
         ShowInfo(0);
     }
+
+    private void GameInput_OnInteract1Action(object sender, int pID)
+    {
+        if (pID == 0)
+        {
+            GameManager.Instance.SetWeapon(0,weaponSOList[currentIndex].name);
+        }
+        else if (pID == 1)
+        {
+            GameManager.Instance.SetWeapon(1, weaponSOList[currentIndex].name);
+        }
+    }
+
+    private void GameInput_OnLeftArrowAction(object sender, int pID)
+    {
+        if (playerID == pID)
+        {
+            leftButton.onClick.Invoke();
+        }
+    }
+
+    private void GameInput_OnRightArrowAction(object sender, int pID)
+    {
+        if (playerID == pID)
+        {
+            rightButton.onClick.Invoke();
+        }
+    }
+
     private void ShowInfo(int index)
     {
         if (currentIndex > weaponSOList.Count-1) { currentIndex = 0; }
