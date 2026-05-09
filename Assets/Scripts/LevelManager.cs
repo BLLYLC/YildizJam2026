@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject player2;
     private string p1WeaponName;
     private string p2WeaponName;
-    private List<WeaponBase> weaponList;
+    [SerializeField] private List<WeaponBase> weaponList;
     private void Start()
     {   
         PlayerController pc1 = player1.GetComponent<PlayerController>();
