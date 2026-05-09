@@ -7,7 +7,7 @@ public class Weapon_Sword : WeaponBase
 
     public override void Activate1(GameObject owner)
     {
-        //swing
+
     }
 
     public override void Activate2(GameObject owner)
