@@ -1478,75 +1478,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8143148509145707247, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
   m_PrefabInstance: {fileID: 4575067968647329040}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &929806216454139147
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2574181801752765463, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_Name
-      value: lightsaber
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760960228832934827, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: model
-      value: 
-      objectReference: {fileID: 2574181801752765463, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-    - target: {fileID: 7760960228832934827, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: WeaponName
-      value: Light Saber
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760960228832934827, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: attackSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.035
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097334049119426920, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
 --- !u!1001 &4384036892239003858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1563,6 +1494,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1327062565}
+    - target: {fileID: 3382479440049574493, guid: f2049ecbafb70a1458f9950755681de4, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7515763769164881176, guid: f2049ecbafb70a1458f9950755681de4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.75
@@ -1660,6 +1595,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1037393430}
+    - target: {fileID: 7200777362387577125, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.21
+      objectReference: {fileID: 0}
     - target: {fileID: 8143148509145707247, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
       propertyPath: m_Name
       value: Player2
@@ -1669,89 +1608,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
---- !u!1001 &5799277616863786318
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3776099473635921625, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_Name
-      value: Blaster
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8902426529355087800, guid: 92782df83282dab428796bf09d477553, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3776099473635921625, guid: 92782df83282dab428796bf09d477553, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8418094917279920180}
-  m_SourcePrefab: {fileID: 100100000, guid: 92782df83282dab428796bf09d477553, type: 3}
---- !u!1 &8058040111961608678 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3776099473635921625, guid: 92782df83282dab428796bf09d477553, type: 3}
-  m_PrefabInstance: {fileID: 5799277616863786318}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8418094917279920180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8058040111961608678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9804e5acd85fc34ca95a3ee26683fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WeaponName: Blaster
-  attackSpeed: 3
-  model: {fileID: 3776099473635921625, guid: 92782df83282dab428796bf09d477553, type: 3}
-  bullet: {fileID: 2930503222941742177, guid: b2b265001c340504da8fa5ab932c78fa, type: 3}
-  distance: 1
-  Knockback: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1768,5 +1624,3 @@ SceneRoots:
   - {fileID: 1544767273}
   - {fileID: 707240342}
   - {fileID: 49347170}
-  - {fileID: 929806216454139147}
-  - {fileID: 5799277616863786318}

@@ -4,8 +4,10 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed=10f;
     [SerializeField] private int playerID;
-    [SerializeField] private WeaponBase weapon;
+    private WeaponBase weapon;
     [SerializeField] private Transform playerHand;
+    [SerializeField] 
+
 
     private void Start()
     {
