@@ -96,6 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9097334049119426920}
   - component: {fileID: 7760960228832934827}
+  - component: {fileID: 1072966302519879406}
   m_Layer: 0
   m_Name: lightsaber
   m_TagString: Untagged
@@ -138,6 +139,30 @@ MonoBehaviour:
   model: {fileID: 2574181801752765463}
   hitPos: {fileID: 337045209171739108}
   damage: 10
+  dashForce: 5
+  dashDuration: 0.15
+--- !u!95 &1072966302519879406
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574181801752765463}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dde0a41336edd5148b5a38a74d2e6b89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3230847845575051501
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7377635335429379884}
   - component: {fileID: 8044342007206185180}
   - component: {fileID: 5301330058982767270}
+  - component: {fileID: 6713078552288450006}
   m_Layer: 0
   m_Name: Blaster
   m_TagString: Untagged
@@ -110,6 +111,28 @@ MonoBehaviour:
   distance: 1.5
   knockback: 0.5
   vAngle: 15
+--- !u!95 &6713078552288450006
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3776099473635921625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b1551226cac64349b8af0ce136f9cbc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7529917530463915205
 GameObject:
   m_ObjectHideFlags: 0
