@@ -5,9 +5,6 @@ using JetBrains.Annotations;
 
 public class ButtonUI : MonoBehaviour
 {
-    [SerializeField] private string exitButton = "MenuScene";
-    [SerializeField] private string chooseYourWeaponButton = "WeaponSelect";
-    [SerializeField] private string playAgain = "GameScene";
 
     public void ExitGameButton()
     {
