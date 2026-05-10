@@ -44,18 +44,17 @@ public class GameManager : MonoBehaviour
 
     public void RoundOver(int loserID)
     {
-        if (loserID == 0) p2Wins++;
-        else p2Wins++;
+        if (loserID == 0) p2Wins++; // Player1 kaybetti, Player2 kazandý
+        else p1Wins++;               // Player2 kaybetti, Player1 kazandý
 
-        if (currentRound >= maxRounds)
+        // currentRound yerine kazanma sayýsýna bak
+        if (p1Wins >= maxRounds || p2Wins >= maxRounds)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2); // Birisi 2 round kazandý, bitir
         }
-
         else
         {
-            currentRound++;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(1); // Devam et
         }
     }
 
