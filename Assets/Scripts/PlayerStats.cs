@@ -27,7 +27,13 @@ public class PlayerStats : MonoBehaviour
         currentHealth -= amount;
         currentHealth = Mathf.Max(0, currentHealth);
         healthBar.SetSlider(currentHealth);
-    
+
+
+        if (currentHealth <= 0)
+        {
+            GameManager.Instance.RoundOver(playerID);
+        }
+
         if (currentHealth <= 0)
         {
             print(playerID + "Öldü");
