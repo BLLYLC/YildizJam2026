@@ -5,7 +5,11 @@ public class Blaster : WeaponBase
     [SerializeField] private GameObject bullet;
     [SerializeField] private float distance = 1f;
     [SerializeField] private float knockback = 1f;
-    [SerializeField] private float vAngle = 15f; 
+    [SerializeField] private float vAngle = 15f;
+
+    [SerializeField] private float dashForce = 5f;
+    [SerializeField] private float dashDuration = 0.2f;
+
 
     public override void Activate1(GameObject owner)
     {
@@ -19,6 +23,12 @@ public class Blaster : WeaponBase
         BlasterBullet bs = b.GetComponent<BlasterBullet>();
         bs.SetPlayer(pID);
         owner.transform.position -= owner.transform.forward * knockback;
+        
+            CharacterController cc = owner.GetComponent<CharacterController>();
+        if (cc!=null)
+        {
+            cc.Move(owner.transform.forward * dashForce);
+        }
 
     }
 
