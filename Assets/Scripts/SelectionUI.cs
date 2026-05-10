@@ -37,11 +37,11 @@ public class SelectionUI : MonoBehaviour
     {
         if (pID == 0)
         {
-            GameManager.Instance.SetWeapon(0,weaponSOList[currentIndex].name);
+            GameManager.Instance.SetWeapon(0,weaponSOList[currentIndex].WeaponName);
         }
         else if (pID == 1)
         {
-            GameManager.Instance.SetWeapon(1, weaponSOList[currentIndex].name);
+            GameManager.Instance.SetWeapon(1, weaponSOList[currentIndex].WeaponName);
         }
     }
 
