@@ -24,7 +24,7 @@ public class Blaster : WeaponBase
         bs.SetPlayer(pID);
         owner.transform.position -= owner.transform.forward * knockback;
         
-            CharacterController cc = owner.GetComponent<CharacterController>();
+        CharacterController cc = owner.GetComponent<CharacterController>();
         if (cc!=null)
         {
             cc.Move(owner.transform.forward * dashForce);
