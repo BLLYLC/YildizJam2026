@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: SwordSO
   m_EditorClassIdentifier: 
   WeaponName: LightSaber
-  FirstHalf: "Mermileri engelleyebilir.\\nSald\u0131r\u0131 ka\xE7\u0131r\u0131l\u0131rsa
-    kullan\u0131c\u0131ya hasar verir. "
-  SecondHalf: "Sald\u0131r\u0131 rakibe isabet etmezse\\noyuncu hasar al\u0131r"
+  FirstHalf: +%20 Hareket Hizi
+  SecondHalf: Dusmana vuramazsa sahibine\nvurur
   WeaponSprite: {fileID: 21300000, guid: cbd5306959873f54186d59ebbb54821b, type: 3}
