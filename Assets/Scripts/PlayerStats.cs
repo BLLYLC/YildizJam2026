@@ -17,6 +17,13 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        Shield shield = GetComponentInChildren<Shield>();
+        if (shield != null && shield.IsBlocking())
+        {
+            Debug.Log("Hasar bloklandi!");
+            return; // Hasar alma
+        }
+
         currentHealth -= amount;
         currentHealth = Mathf.Max(0, currentHealth);
         healthBar.SetSlider(currentHealth);
