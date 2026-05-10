@@ -671,8 +671,11 @@ MonoBehaviour:
   player2: {fileID: 1633644076}
   weaponPrefabList:
   - {fileID: 2574181801752765463, guid: 3a16ce62192fcdf48bd563d07554bf39, type: 3}
-  - {fileID: 594864743451228342, guid: 38d15223c6596a043b0d82b719d5c8f8, type: 3}
   - {fileID: 3776099473635921625, guid: 92782df83282dab428796bf09d477553, type: 3}
+  - {fileID: 594864743451228342, guid: 38d15223c6596a043b0d82b719d5c8f8, type: 3}
+  lightsaberObject: {fileID: 0}
+  blasterObject: {fileID: 0}
+  shieldObject: {fileID: 0}
 --- !u!4 &479664587
 Transform:
   m_ObjectHideFlags: 0

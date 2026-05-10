@@ -5,9 +5,9 @@ using UnityEngine;
 public class LightSaberAnimator : MonoBehaviour
 {
     private const string IS_ATTACK = "IsAttack";
+    private const string IS_ATTACK_TRIG = "attackTrigger";
 
-
-    [SerializeField] private Player player;
+   // [SerializeField] private Player player;
 
 
     private Animator animator;
@@ -20,8 +20,23 @@ public class LightSaberAnimator : MonoBehaviour
 
     private void Update()
     {
-        animator.SetBool(IS_ATTACK, player.IsAttack());
+        if (animator != null)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                Attack();
+            }
+        }
+        else
+        {
+            Debug.Log("null anim");
+        }
     }
-
+    private void Attack()
+    {
+        //animator.SetBool(IS_ATTACK, player.IsAttack());
+        Debug.Log("attack triggered");
+        animator.SetTrigger(IS_ATTACK_TRIG);
+    }
 
 }

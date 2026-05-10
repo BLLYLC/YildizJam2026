@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         return playerID;
     }
     public void SetWeapon(WeaponBase newWeapon)
-    {
+    {       
         weapon = newWeapon;
 
         if (newWeapon is LightSaber)

@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,12 +9,16 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject player1;
     [SerializeField] GameObject player2;
     [SerializeField] private List<GameObject> weaponPrefabList;
-    
-   // private string p1WeaponName;
-   // private string p2WeaponName;
-    
-   // private WeaponBase p1Weapon;
-   // private WeaponBase p2Weapon;
+
+    public WeaponBase lightsaberObject;
+    public WeaponBase blasterObject;
+    public WeaponBase shieldObject;
+
+    // private string p1WeaponName;
+    // private string p2WeaponName;
+
+    // private WeaponBase p1Weapon;
+    // private WeaponBase p2Weapon;
     private void Start()
     {
         AssignWeapon(player1, GameManager.Instance.GetWeaponName(0));
@@ -62,10 +67,24 @@ public class LevelManager : MonoBehaviour
     {
         if (Keyboard.current.qKey.wasPressedThisFrame)
         {
-            var t = Instantiate(weaponPrefabList[0]).GetComponent<WeaponBase>();
-            player1.GetComponent<PlayerController>().SetWeapon(t);
-            var t2 = Instantiate(weaponPrefabList[1]).GetComponent<WeaponBase>();
-            player2.GetComponent<PlayerController>().SetWeapon(t2);
+            if (lightsaberObject == null) {
+                Debug.Log("lightsaber created");
+                var lightsaberObj = Instantiate(weaponPrefabList[0]).GetComponent<WeaponBase>();
+                lightsaberObject = lightsaberObj;
+                player1.GetComponent<PlayerController>().SetWeapon(lightsaberObj);
+            }
+
+            if (blasterObject == null)
+            {
+                Debug.Log("lightsaber created");
+                var blasterObj = Instantiate(weaponPrefabList[1]).GetComponent<WeaponBase>();
+                blasterObject = blasterObj;
+                player2.GetComponent<PlayerController>().SetWeapon(blasterObj);
+            }
+
+
+            //var t2 = Instantiate(weaponPrefabList[1]).GetComponent<WeaponBase>();
+            //player2.GetComponent<PlayerController>().SetWeapon(t2);
         }
     }
 }

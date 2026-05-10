@@ -33,4 +33,8 @@ public class PlayerStats : MonoBehaviour
             GameManager.Instance.RoundOver(playerID);
         }    
     }    
+    public int GetPlayerId()
+    {
+        return playerID;
+    }
 }
