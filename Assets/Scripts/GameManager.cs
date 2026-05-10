@@ -50,16 +50,19 @@ public class GameManager : MonoBehaviour
         // currentRound yerine kazanma sayýsýna bak
         if (p1Wins >= maxRounds || p2Wins >= maxRounds)
         {
-            SceneManager.LoadScene(2); // Birisi 2 round kazandý, bitir
+            SceneManager.LoadScene(3); // Birisi 2 round kazandý, bitir
+            ResetWins();
         }
         else
         {
-            SceneManager.LoadScene(1); // Devam et
+            
+            SceneManager.LoadScene(2); // Devam et
         }
     }
 
     public void StartGame()
-    {
+    {   
+        ResetWins();
         SceneManager.LoadScene(2);
     }
     public int GetPlayerWins(int playerID)
