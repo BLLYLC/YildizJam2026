@@ -29,11 +29,11 @@ public class GameInput : MonoBehaviour
         p1Actions.Player.Interact2.performed += _ => OnInteract2Action?.Invoke(this, 0);
         p2Actions.Player.Interact2.performed += _ => OnInteract2Action?.Invoke(this, 1);
 
-        p1Actions.Player.RightArrow.performed += _ => OnRightArrowAction?.Invoke(this, 0);
-        p2Actions.Player.RightArrow.performed += _ => OnRightArrowAction?.Invoke(this, 1);
+        p1Actions.Player.Right.performed += _ => OnRightArrowAction?.Invoke(this, 0);
+        p2Actions.Player.Right.performed += _ => OnRightArrowAction?.Invoke(this, 1);
 
-        p1Actions.Player.LeftArrow.performed += _ => OnLeftArrowAction?.Invoke(this, 0);
-        p2Actions.Player.LeftArrow.performed += _ => OnLeftArrowAction?.Invoke(this, 1);
+        p1Actions.Player.Left.performed += _ => OnLeftArrowAction?.Invoke(this, 0);
+        p2Actions.Player.Left.performed += _ => OnLeftArrowAction?.Invoke(this, 1);
     }
     public Vector2 GetMovementVectorNormalized(int playerID)
     {

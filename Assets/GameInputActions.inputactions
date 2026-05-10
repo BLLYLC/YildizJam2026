@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RightArrow",
+                    "name": "Right",
                     "type": "Button",
                     "id": "ba5f9314-41ce-4c06-884d-e96c1b8c91a3",
                     "expectedControlType": "",
@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "LeftArrow",
+                    "name": "Left",
                     "type": "Button",
                     "id": "1bd663b8-c123-49bd-9f17-a17c9fb35de1",
                     "expectedControlType": "",
@@ -214,7 +214,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Player1",
-                    "action": "RightArrow",
+                    "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -225,7 +225,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Player2",
-                    "action": "RightArrow",
+                    "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -236,7 +236,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Player1",
-                    "action": "LeftArrow",
+                    "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -247,7 +247,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Player2",
-                    "action": "LeftArrow",
+                    "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

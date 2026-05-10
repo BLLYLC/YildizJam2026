@@ -120,7 +120,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""RightArrow"",
+                    ""name"": ""Right"",
                     ""type"": ""Button"",
                     ""id"": ""ba5f9314-41ce-4c06-884d-e96c1b8c91a3"",
                     ""expectedControlType"": """",
@@ -129,7 +129,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""LeftArrow"",
+                    ""name"": ""Left"",
                     ""type"": ""Button"",
                     ""id"": ""1bd663b8-c123-49bd-9f17-a17c9fb35de1"",
                     ""expectedControlType"": """",
@@ -300,7 +300,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Player1"",
-                    ""action"": ""RightArrow"",
+                    ""action"": ""Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -311,7 +311,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Player2"",
-                    ""action"": ""RightArrow"",
+                    ""action"": ""Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -322,7 +322,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Player1"",
-                    ""action"": ""LeftArrow"",
+                    ""action"": ""Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -333,7 +333,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Player2"",
-                    ""action"": ""LeftArrow"",
+                    ""action"": ""Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -370,8 +370,8 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Interact1 = m_Player.FindAction("Interact1", throwIfNotFound: true);
         m_Player_Interact2 = m_Player.FindAction("Interact2", throwIfNotFound: true);
-        m_Player_RightArrow = m_Player.FindAction("RightArrow", throwIfNotFound: true);
-        m_Player_LeftArrow = m_Player.FindAction("LeftArrow", throwIfNotFound: true);
+        m_Player_Right = m_Player.FindAction("Right", throwIfNotFound: true);
+        m_Player_Left = m_Player.FindAction("Left", throwIfNotFound: true);
     }
 
     ~@GameInputActions()
@@ -455,8 +455,8 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Interact1;
     private readonly InputAction m_Player_Interact2;
-    private readonly InputAction m_Player_RightArrow;
-    private readonly InputAction m_Player_LeftArrow;
+    private readonly InputAction m_Player_Right;
+    private readonly InputAction m_Player_Left;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -481,13 +481,13 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Interact2 => m_Wrapper.m_Player_Interact2;
         /// <summary>
-        /// Provides access to the underlying input action "Player/RightArrow".
+        /// Provides access to the underlying input action "Player/Right".
         /// </summary>
-        public InputAction @RightArrow => m_Wrapper.m_Player_RightArrow;
+        public InputAction @Right => m_Wrapper.m_Player_Right;
         /// <summary>
-        /// Provides access to the underlying input action "Player/LeftArrow".
+        /// Provides access to the underlying input action "Player/Left".
         /// </summary>
-        public InputAction @LeftArrow => m_Wrapper.m_Player_LeftArrow;
+        public InputAction @Left => m_Wrapper.m_Player_Left;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -523,12 +523,12 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             @Interact2.started += instance.OnInteract2;
             @Interact2.performed += instance.OnInteract2;
             @Interact2.canceled += instance.OnInteract2;
-            @RightArrow.started += instance.OnRightArrow;
-            @RightArrow.performed += instance.OnRightArrow;
-            @RightArrow.canceled += instance.OnRightArrow;
-            @LeftArrow.started += instance.OnLeftArrow;
-            @LeftArrow.performed += instance.OnLeftArrow;
-            @LeftArrow.canceled += instance.OnLeftArrow;
+            @Right.started += instance.OnRight;
+            @Right.performed += instance.OnRight;
+            @Right.canceled += instance.OnRight;
+            @Left.started += instance.OnLeft;
+            @Left.performed += instance.OnLeft;
+            @Left.canceled += instance.OnLeft;
         }
 
         /// <summary>
@@ -549,12 +549,12 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             @Interact2.started -= instance.OnInteract2;
             @Interact2.performed -= instance.OnInteract2;
             @Interact2.canceled -= instance.OnInteract2;
-            @RightArrow.started -= instance.OnRightArrow;
-            @RightArrow.performed -= instance.OnRightArrow;
-            @RightArrow.canceled -= instance.OnRightArrow;
-            @LeftArrow.started -= instance.OnLeftArrow;
-            @LeftArrow.performed -= instance.OnLeftArrow;
-            @LeftArrow.canceled -= instance.OnLeftArrow;
+            @Right.started -= instance.OnRight;
+            @Right.performed -= instance.OnRight;
+            @Right.canceled -= instance.OnRight;
+            @Left.started -= instance.OnLeft;
+            @Left.performed -= instance.OnLeft;
+            @Left.canceled -= instance.OnLeft;
         }
 
         /// <summary>
@@ -643,18 +643,18 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract2(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "RightArrow" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Right" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnRightArrow(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "LeftArrow" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Left" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnLeftArrow(InputAction.CallbackContext context);
+        void OnLeft(InputAction.CallbackContext context);
     }
 }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SwordSO
   m_EditorClassIdentifier: 
   WeaponName: Light Saber
-  FirstHalf: "Sald\u0131r\u0131 rakibe isabet etmezse, oyuncu hasar al\u0131r. H\u0131zlan\u0131r."
-  SecondHalf: "sald\u0131r\u0131 s\u0131ras\u0131nda dash eklenir."
+  FirstHalf: "Mermileri engelleyebilir.\\nSald\u0131r\u0131 ka\xE7\u0131r\u0131l\u0131rsa
+    kullan\u0131c\u0131ya hasar verir. "
+  SecondHalf: "Sald\u0131r\u0131 rakibe isabet etmezse\\noyuncu hasar al\u0131r"
   WeaponSprite: {fileID: 21300000, guid: c4964e1099f1775498206fea08704ccc, type: 3}
