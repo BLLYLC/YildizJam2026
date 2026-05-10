@@ -30,6 +30,7 @@ public class PlayerStats : MonoBehaviour
     
         if (currentHealth <= 0)
         {
+            print(playerID + "Öldü");
             GameManager.Instance.RoundOver(playerID);
         }    
     }    

@@ -8,7 +8,7 @@ public class LightSaber : WeaponBase
     [SerializeField] private float dashForce = 5f;
     [SerializeField] private float dashDuration = 0.15f;
 
-    public override void Activate2(GameObject owner)
+    public override void Activate1(GameObject owner)
     {
         //Normal attack
         //2 = animasyon + saldýrý
@@ -32,7 +32,7 @@ public class LightSaber : WeaponBase
         }
     }
 
-    public override void Activate1(GameObject owner)
+    public override void Activate2(GameObject owner)
     {
         StartCoroutine(DashCoroutine(owner));
 
