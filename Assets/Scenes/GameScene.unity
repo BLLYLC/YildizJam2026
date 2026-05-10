@@ -1457,8 +1457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdc4db479b49444992cfce7677f02c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1Wins: 0
-  p2Wins: 0
   currentRound: 1
 --- !u!4 &1558484539
 Transform:
@@ -1709,6 +1707,10 @@ PrefabInstance:
     - target: {fileID: 1156553810421761524, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647332053784371711, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
+      propertyPath: playerID
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4647332053784371711, guid: 45c4baa3f4bedaa41928bf0077772fb6, type: 3}
       propertyPath: healthBar

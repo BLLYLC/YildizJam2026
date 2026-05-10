@@ -9,8 +9,8 @@ public class EndScreenUI : MonoBehaviour
 
     private void Start()
     {
-        int p1 = GameManager.Instance.p1Wins;
-        int p2 = GameManager.Instance.p2Wins;
+        int p1 = GameManager.Instance.GetPlayerWins(0);
+        int p2 = GameManager.Instance.GetPlayerWins(1);
 
         if (p1 > p2)
             winnerText.text = "Oyuncu 1 Kazandý!";
@@ -24,8 +24,8 @@ public class EndScreenUI : MonoBehaviour
 
     public void PlayAgain()
     {
-        GameManager.Instance.p1Wins = 0;
-        GameManager.Instance.p2Wins = 0;
+        GameManager.Instance.ResetWins();
+        
         SceneManager.LoadScene(0);
     }
 }

@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     public static string p1WeaponName;
     public static string p2WeaponName;
 
-    public int p1Wins = 0;
-    public int p2Wins = 0;
+    private static int p1Wins = 0;
+    private static int p2Wins = 0;
     public int currentRound = 1;
     public const int maxRounds = 2;
 
@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
 
     public void RoundOver(int loserID)
     {
-        if (loserID == 0) p2Wins++; // Player1 kaybetti, Player2 kazandý
-        else p1Wins++;               // Player2 kaybetti, Player1 kazandý
-
+        if (loserID == 0) { p2Wins++; } // Player1 kaybetti, Player2 kazandý
+        else { p1Wins++; }               // Player2 kaybetti, Player1 kazandý
+        print("P1 win sayýsý"+p1Wins +"p2win sayýsý" +p2Wins);
         // currentRound yerine kazanma sayýsýna bak
         if (p1Wins >= maxRounds || p2Wins >= maxRounds)
         {
@@ -61,5 +61,18 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+    }
+    public int GetPlayerWins(int playerID)
+    {
+        if(playerID == 0)
+        {
+            return p1Wins;
+        }
+        else { return p2Wins; }
+    }
+    public void ResetWins()
+    {
+        p1Wins= 0;
+        p2Wins= 0;
     }
 }
