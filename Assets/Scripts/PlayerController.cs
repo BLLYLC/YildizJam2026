@@ -53,6 +53,9 @@ public class PlayerController : MonoBehaviour
     public void SetWeapon(WeaponBase newWeapon)
     {       
         weapon = newWeapon;
+        newWeapon.transform.parent = playerHand;
+        newWeapon.transform.localPosition = Vector3.zero;
+        newWeapon.transform.localRotation = Quaternion.identity;
 
         if (newWeapon is LightSaber)
         {
@@ -61,14 +64,13 @@ public class PlayerController : MonoBehaviour
         else if (newWeapon is Blaster)
         {
             moveSpeed = (baseMoveSpeed * 0.6f);
+            newWeapon.transform.localRotation *= Quaternion.Euler(-90, 0, 0);
         }
         
         else
         {
             moveSpeed = baseMoveSpeed;
         }
-        newWeapon.transform.parent = playerHand;
-        newWeapon.transform.localPosition = Vector3.zero;
-        newWeapon.transform.localRotation = Quaternion.identity;
+        
     }
 }
