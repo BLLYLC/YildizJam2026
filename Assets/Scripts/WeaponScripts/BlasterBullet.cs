@@ -5,7 +5,6 @@ public class BlasterBullet : MonoBehaviour
     [SerializeField] private float damage = 10f;
     [SerializeField] private float speed = 15f;
     [SerializeField] private float lifetime = 10f;
-    [SerializeField] private float turnSpeed = 5f;
     [SerializeField] private float time = 0f;
     private int playerID;
 
