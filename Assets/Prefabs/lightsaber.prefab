@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a6ae25d5188164ab51abfe5ece76c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: 
-  attackSpeed: 
+  WeaponName: LightSaber
+  attackSpeed: 3
   model: {fileID: 2574181801752765463}
   hitPos: {fileID: 337045209171739108}
   damage: 10

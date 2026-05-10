@@ -104,11 +104,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: Blaster
-  attackSpeed: 3
+  attackSpeed: 20
   model: {fileID: 3776099473635921625}
   bullet: {fileID: 2930503222941742177, guid: b2b265001c340504da8fa5ab932c78fa, type: 3}
-  distance: 1
-  Knockback: 1
+  distance: 1.5
+  knockback: 0.2
+  vAngle: 15
 --- !u!1 &7529917530463915205
 GameObject:
   m_ObjectHideFlags: 0
