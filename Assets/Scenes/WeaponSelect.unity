@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Sald\u0131r\u0131 rakibe isabet etmezse \noyuncu hasar al\u0131r. \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
+  m_sharedMaterial: {fileID: -2022170877907051406, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_text: "Mermileri engelleyebilir.\nSald\u0131r\u0131 ka\xE7\u0131r\u0131l\u0131rsa
     kullan\u0131c\u0131ya hasar verir.\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
+  m_sharedMaterial: {fileID: -2022170877907051406, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -763,8 +763,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Light Saber
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
+  m_sharedMaterial: {fileID: -2022170877907051406, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1094,8 +1094,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Sald\u0131r\u0131 rakibe isabet etmezse \noyuncu hasar al\u0131r. \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
+  m_sharedMaterial: {fileID: -2022170877907051406, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2330,8 +2330,8 @@ MonoBehaviour:
   m_text: "Mermileri engelleyebilir.\nSald\u0131r\u0131 ka\xE7\u0131r\u0131l\u0131rsa
     kullan\u0131c\u0131ya hasar verir.\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
+  m_sharedMaterial: {fileID: -2022170877907051406, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2466,8 +2466,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Light Saber
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
+  m_sharedMaterial: {fileID: -2022170877907051406, guid: 2173e031e26f4a843a5310cffc8d7920, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
