@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
 
     private bool isWalking;
+    private bool isAttack;
+
     private void Update()
     {
         Vector2 inputVector = new Vector2(0, 0);
@@ -41,5 +43,10 @@ public class Player : MonoBehaviour
     public bool IsWalking()
     {
         return isWalking;
+    }
+
+    public bool IsAttack()
+    {
+        return isAttack;
     }
 }
