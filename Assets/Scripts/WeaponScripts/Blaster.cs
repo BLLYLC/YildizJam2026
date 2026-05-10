@@ -8,7 +8,6 @@ public class Blaster : WeaponBase
     [SerializeField] private float vAngle = 15f;
 
     [SerializeField] private float dashForce = 5f;
-    [SerializeField] private float dashDuration = 0.2f;
 
 
     public override void Activate1(GameObject owner)
