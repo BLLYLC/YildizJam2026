@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
    
     private WeaponBase weapon;
     private float moveSpeed;
+    private Rigidbody rb;
 
 
     private void Start()
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
         moveSpeed = baseMoveSpeed;
         GameInput.Instance.OnInteract1Action += GameInput_OnInteract1Action;
         GameInput.Instance.OnInteract2Action += GameInout_OnInteract2Action;
+        rb = GetComponent<Rigidbody>();
     }
 
     private void GameInout_OnInteract2Action(object sender, int pID)
@@ -30,7 +32,7 @@ public class PlayerController : MonoBehaviour
         if (pID == playerID && weapon != null)
         {
             weapon.Activate1(gameObject);
-        }
+        }   
        
     }
 
@@ -38,14 +40,19 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized(playerID);
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+
+        // AddForce YER�NE VELOCITY KULLANIYORUZ
+        // rb.velocity.y diyerek yer�ekiminden etkilenmeye devam etmesini sa�l�yoruz
+        rb.linearVelocity = new Vector3(moveDir.x * moveSpeed, rb.linearVelocity.y, moveDir.z * moveSpeed);
 
         if (moveDir != Vector3.zero)
         {
             float rotateSpeed = 10f;
-            transform.forward = Vector3.Slerp(transform.forward, moveDir, rotateSpeed * Time.deltaTime);
+            Quaternion targetRotation = Quaternion.LookRotation(moveDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
         }
     }
+
     public int GetPlayerID()
     {
         return playerID;
