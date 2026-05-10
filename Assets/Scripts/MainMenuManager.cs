@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
@@ -11,7 +12,7 @@ public class MainMenuManager : MonoBehaviour
     {
         playButton.onClick.AddListener(() =>
         {
-
+            SceneManager.LoadScene(1);
         });
         playButton.onClick.AddListener(() =>
         {
